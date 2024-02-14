@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import { Routes, Route, BrowserRouter, Navigate } from 'react-router-dom';
 import Home from './component/Home'
@@ -7,11 +7,29 @@ import Future from './component/Future';
 import ILoveYou from './component/ILoveYou';
 import Page404 from './component/Page404';
 
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [size, setSize] = useState(false);
+  const baseWidth = 375;
+  const baseHeight = 700;
+
+  useEffect(()=> {
+    if(width >= baseWidth && height >= baseHeight){
+      setSize(true);
+      console.log("changed to true")
+    } else{
+      setSize(false)
+      console.log("changed to false")
+    }
+}, [width,height])
 
   return (
-    <div className='m'>
+    <>
+    {size ? (
+      <div className='m'>
        <div className='background'></div>
       <BrowserRouter>
       <Routes>
@@ -24,6 +42,10 @@ function App() {
           </Routes>
       </BrowserRouter>
     </div>
+    ): (
+      <p>This Can not be Viewed Tablet and Laptop</p>
+    )}
+    </>
   )
 }
 
