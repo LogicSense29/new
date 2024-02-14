@@ -13,16 +13,16 @@ var height = window.innerHeight;
 
 function App() {
   const [size, setSize] = useState(false);
-  const baseWidth = 600;
-  const baseHeight = 700;
+  const baseWidth = 480;
+  const baseHeight = 900;
 
   useEffect(()=> {
     if(width <= baseWidth && height <= baseHeight){
       setSize(true);
-      console.log("changed to true")
+      console.log("changed to true", width,height)
     } else{
       setSize(false)
-      console.log("changed to false")
+      console.log("changed to false", width,height)
     }
 }, [width,height])
 
