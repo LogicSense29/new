@@ -17,7 +17,7 @@ function App() {
   const baseHeight = 700;
 
   useEffect(()=> {
-    if(width >= baseWidth && height >= baseHeight){
+    if(width <= baseWidth && height <= baseHeight){
       setSize(true);
       console.log("changed to true")
     } else{
