@@ -13,7 +13,7 @@ var height = window.innerHeight;
 
 function App() {
   const [size, setSize] = useState(false);
-  const baseWidth = 400;
+  const baseWidth = 500;
   const baseHeight = 700;
 
   useEffect(()=> {
@@ -43,7 +43,7 @@ function App() {
       </BrowserRouter>
     </div>
     ): (
-      <p>This Can not be Viewed Tablet and Laptop</p>
+      <h1>This Can not be Viewed on Tablet and Laptop</h1>
     )}
     </>
   )
