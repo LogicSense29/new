@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.m{
+  position: relative;
+}
+
+.background{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(./assets/images/love-france-heart-national-culture-paris.svg);
+  background-size: 200px;
+  /* background-color: rgba(128, 128, 128, 0.1); */
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.root {
+  padding: 2rem;
+  
+}
+
+.card{
+  border-radius: 10px;
+  /* border: 1px solid rgba(128, 128, 128, 0.7); */
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  background-color: #C00000;
+  color: white;
+}
+
+.card h2{
+  font-weight: 600;
+}
+
+.card .one {
+  height: 60%;
+}
+
+.card .two {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.card .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .icon {
+
+}
+
+.card .one img{
+  border-radius: 10px 10px 20px 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.b{
+    text-align: right;
+}
+
+.wwa .one, .future .one{
+  height: 40%;
+}
+
+.wwa .one{
+  padding: 10px 0 0 0;
+}
+
+.wwa .one img{
+  width: 90%;
+}
+
+.b {
+  margin-top: 10px;
+}
+
+.fu, .ww{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
