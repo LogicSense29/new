@@ -7,13 +7,13 @@ import Future from './component/Future';
 import ILoveYou from './component/ILoveYou';
 import Page404 from './component/Page404';
 
-const width = window.innerWidth;
-const height = window.innerHeight;
+var width = window.innerWidth;
+var height = window.innerHeight;
 
 
 function App() {
   const [size, setSize] = useState(false);
-  const baseWidth = 375;
+  const baseWidth = 400;
   const baseHeight = 700;
 
   useEffect(()=> {
