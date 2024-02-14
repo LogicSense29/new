@@ -23,7 +23,7 @@ export default function Home() {
                 </div>
         </div>
         <div className='b'>
-            <Link to="/wwa" >NEXT</Link>
+            <Link to="/wwa" className='link' >NEXT</Link>
         </div>
     </div>
   )

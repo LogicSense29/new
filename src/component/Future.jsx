@@ -23,8 +23,8 @@ export default function Future() {
             </div>
     </div>
     <div className='b fu'>
-        <Link to="/home" >PREVIOUS</Link>
-        <Link to="/iloveyou" >NEXT</Link>
+        <Link to="/wwa" className='link'>PREVIOUS</Link>
+        <Link to="/iloveyou" className='link'>NEXT</Link>
     </div>
 </div>
   )

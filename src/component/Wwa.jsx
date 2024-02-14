@@ -23,8 +23,8 @@ export default function Wwa() {
             </div>
     </div>
     <div className='b ww'>
-        <Link to="/home" >PREVIOUS</Link>
-        <Link to="/future" >NEXT</Link>
+        <Link to="/" className='link'>PREVIOUS</Link>
+        <Link to="/future" className='link'>NEXT</Link>
     </div>
 </div>
   )
