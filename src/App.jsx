@@ -13,7 +13,7 @@ var height = window.innerHeight;
 
 function App() {
   const [size, setSize] = useState(false);
-  const baseWidth = 500;
+  const baseWidth = 600;
   const baseHeight = 700;
 
   useEffect(()=> {
